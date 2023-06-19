@@ -14,7 +14,7 @@ const Shopcard = ({product}) => {
     const handleCartClick = () => {
        const cartDetails= {name,price,img,_id,category,ratings,email:user.email,
         stock,shipping,quantity,ratingsCount}
-        fetch("http://localhost:5000/addCarts",{
+        fetch("https://eazybye-surver-shammi-riya.vercel.app/addCarts",{
             method:"POST",
             headers:{
                 "content-type":"application/json"

@@ -23,7 +23,7 @@ const Addproducts = () => {
      
 
     const handleDelete = (id) => {
-       fetch(`http://localhost:5000/carts/${id}`,{
+       fetch(`https://eazybye-surver-shammi-riya.vercel.app/carts/${id}`,{
         method:"DELETE"
        })
        .then(res=>res.json())
@@ -40,7 +40,7 @@ const Addproducts = () => {
 
 
     const handleUpdate = (id) => {
-        fetch(`http://localhost:5000/updateQuantity/${id}`, {
+        fetch(`https://eazybye-surver-shammi-riya.vercel.app/updateQuantity/${id}`, {
           method: "PATCH",
           headers: {
             "Content-Type": "application/json",
@@ -61,7 +61,7 @@ const Addproducts = () => {
       };
       
     const decreaseQuantity = (id) => {
-        fetch(`http://localhost:5000/decreaseQuantity/${id}`, {
+        fetch(`https://eazybye-surver-shammi-riya.vercel.app/decreaseQuantity/${id}`, {
           method: "PATCH",
           headers: {
             "Content-Type": "application/json",

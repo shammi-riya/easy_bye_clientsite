@@ -8,7 +8,7 @@ const UseCarts = () => {
     const { refetch, data: carts = [] } = useQuery({
         queryKey: ['carts', user?.email],
         queryFn: async () => {
-            const res = await fetch(`http://localhost:5000/carts?email=${user?.email}`)
+            const res = await fetch(`https://eazybye-surver-shammi-riya.vercel.app/carts?email=${user?.email}`)
             return res.json();
         }
 

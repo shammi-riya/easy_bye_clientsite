@@ -18,7 +18,7 @@ const Shop = () => {
 
   useEffect(() => {
     async function fetchData() {
-      const response = await fetch(`http://localhost:5000/products?page=${currentsPage}&limit=${productsPerPage}`);
+      const response = await fetch(`https://eazybye-surver-shammi-riya.vercel.app/products?page=${currentsPage}&limit=${productsPerPage}`);
 
       const data = await response.json();
       setProductData(data);
@@ -40,7 +40,7 @@ const Shop = () => {
     const { short } = data;
     console.log(short);
   
-    fetch('http://localhost:5000/shortbyproducts', {
+    fetch('https://eazybye-surver-shammi-riya.vercel.app/shortbyproducts', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

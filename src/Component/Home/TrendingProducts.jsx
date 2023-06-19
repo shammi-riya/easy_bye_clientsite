@@ -9,7 +9,7 @@ const TrendingProducts = () => {
 
     useEffect(() => {
 
-        fetch(`http://localhost:5000/someproducts`)
+        fetch(`https://eazybye-surver-shammi-riya.vercel.app/someproducts`)
             .then(res => res.json())
             .then(data => {
                 setTrendenciProducts(data)

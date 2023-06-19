@@ -21,7 +21,7 @@ const router = createBrowserRouter([
         {
           path: "/shop",
           element: <PrivetRoute><Shop></Shop></PrivetRoute>,
-          loader:()=>fetch('http://localhost:5000/allProducts')
+          loader:()=>fetch(' https://eazybye-surver-shammi-riya.vercel.app/allProducts')
         },
         {
           path:'/addproducts',
